@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="/css/style.css">
 
@@ -36,9 +38,9 @@
         <div class="img">
             <div class="img__shadow">
                 <div class="img__text">
-                    <h1 class="img__h1 animate__animated animate__bounceInUp">Cześć, jestem Mateusz Kaleta</h1>
-                    <h2 class="img__h2 animate__animated animate__bounceInUp animate__delay-1s">Junior front-end Developer</h2> 
-                    <button type="button" href='#about' class="btn btn-outline-light animate__animated animate__bounceInUp animate__delay-2s">About</button>
+                    <h1 class="img__h1 os-animation animate__animated animate__bounceInUp" data-delay='.2s'>Cześć, jestem Mateusz Kaleta</h1>
+                    <h2 class="img__h2 os-animation animate__animated animate__bounceInUp" data-delay='.5s'>Junior front-end Developer</h2> 
+                    <a class="btn btn-outline-light os-animation animate__animated animate__bounceInUp" href='#about' data-delay='.8s'>About</a>
                 </div>
             </div>
             <a href="#about"><i class="fas fa-arrow-down"></i></a>
@@ -47,7 +49,7 @@
 
       <main>
 
-        <section class="about">
+        <section id="about" class="about scroll-fix">
           <div class="jumbotron">
             <h1 class="jumbotron__h1">O MNIE</h1>
             <div class="jumbotron__underline"></div>
@@ -60,6 +62,115 @@
               a za cel narzucają sobie dążenie do ciągłego samorozwoju.`</p>
           </div>
         </section>
+        <section id="portfolio" class="portfolio-box scroll-fix">
+          <div class="portfolio">
+              <h1 class="portfolio__h1">Portfolio</h1>
+              <div class="portfolio__underline"></div>
+              <div class="card-deck portfolio-carousel wrapper">
+                <div class="card">
+                  <div class="card__img1"></div>
+                  <img src="/images/portfolio1.jpg" class="card-img-top" alt="protfoliov1">
+                  <div class="card__body">
+                    <h5 class="card__title">Pierwsza strona (Portfolio)</h5>
+                    <p class="card__text">Do stworzenia strony wykorzystałem:<br>
+                      - <span class="red">HTML5</span>, <span class="blue">CSS3</span>, <span class="yellow">javaScript</span>.</p>
+                    <div class="card__footer">
+                      <a href="https://github.com/m-kaleta/my-1st-website"><i class="fab fa-github"></i></a>
+                      <a href="https://m-kaleta.github.io/my-1st-website/"><button>Live</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/images/todo.jpg" class="card-img-top" alt="todoList">
+                  <div class="card__body">
+                    <h5 class="card__title">ToDoList</h5>
+                    <p class="card__text">Do stworzenia aplikacji wykorzystałem:<br>
+                      <span class="lightblue">React</span>, <span class="pink">SASS</span>.</p>
+                    <div class="card__footer">
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="https://m-kaleta.github.io/my-1st-website/"><button>Live</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/images/cars.jpg" class="card-img-top" alt="Wypożyczalnia samochodów">
+                  <div class="card__body">
+                    <h5 class="card__title">Wypożyczalnia samochodów</h5>
+                    <p class="card__text">Do stworzenia strony wykorzystałem:<br>
+                      <span class="lightblue">React-SPA</span>, <span class="pink">SASS</span>.</p></p>
+                    <div class="card__footer">
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="https://m-kaleta.github.io/my-1st-website/"><button>Live</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/images/apireact.jpg" class="card-img-top" alt="aplikacja pogodowa">
+                  <div class="card__body">
+                    <h5 class="card__title">Aplikacja Pogodowa</h5>
+                    <p class="card__text">Do stworzenia aplikacji wykorzystałem:<br>
+                      <span class="lightblue">React</span>, <span class="pink">SASS</span>, <span class="black">Rest-API</span> .</p></p>
+                    <div class="card__footer">
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="https://m-kaleta.github.io/my-1st-website/"><button>Live</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/images/walidatorr.jpg" class="card-img-top" alt="walidator">
+                  <div class="card__body">
+                    <h5 class="card__title">Panel Rejestracyjny</h5>
+                    <p class="card__text">Do stworzenia aplikacji wykorzystałem:<br>
+                      - <span class="red">HTML5</span>, <span class="blue">CSS3</span>, <span class="yellow">javaScript</span>.</p>
+                    <div class="card__footer">
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="https://m-kaleta.github.io/my-1st-website/"><button>Live</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </section>
+
+        <section id="skills" class="scroll-fix">
+          <div class="skills">
+            <h1 class="skills__h1">Umiejętnosci</h1>
+            <div class="skills__underline"></div>
+            <div class="icons">
+              <div class="skills__icons">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="skills__icons">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="skills__icons">
+                <i class="fab fa-js"></i>
+                <p>JS</p>
+              </div>
+              <div class="skills__icons">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+              </div>
+              <div class="skills__icons">
+                <i class="fab fa-sass"></i>
+                <p>SASS</p>
+              </div>
+              <div class="skills__icons">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="skills__icons">
+                <i class="fab fa-github"></i>
+                <p>GIT</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
 
       </main>
 
@@ -69,6 +180,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="js/animation.js"></script>
 <script src="js/jquery.waypoints.min"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 
