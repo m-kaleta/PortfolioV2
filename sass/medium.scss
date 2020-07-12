@@ -10,7 +10,7 @@
 .btn-outline-light {
     font-size: 25px;
 }
-.jumbotron, .portfolio, .skills {
+.jumbotron, .portfolio, .skills, .welcome {
     &__h1 {
         font-size: 40px;
     }
@@ -21,4 +21,8 @@
 }
 .icons {
     width: 80%;
+}
+
+.form {
+    width: 70%;
 }
