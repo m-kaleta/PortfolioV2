@@ -54,7 +54,7 @@ body {
     position: relative;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 100vh;
     &__shadow {
         display: flex;
@@ -117,7 +117,7 @@ body {
     
 .portfolio {
     background-image: url(../images/laptop_1920.jpg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -265,9 +265,9 @@ span.black {
 
 .contact {
     background-image: url(../images/imac_1920.jpg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -384,4 +384,17 @@ input,textarea {
 }
 input,textarea:focus{
     background-color: rgba(0, 0, 0, .6);
+}
+
+
+@media screen and (min-width: 1024px){
+    .img {
+        background-attachment: fixed;
+    }
+    .contact {
+        background-attachment: fixed;
+    }
+    .portfolio {
+        background-attachment: fixed;
+    }
 }
