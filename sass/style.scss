@@ -17,26 +17,29 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 200;
-    transition: .6s;
-    a {
-        width: 100%;
-        color: $whiteColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    a, i {
+        color: white;
+        transition: color .3s;
         font-size: 15px;
-        text-transform: uppercase;
-        transition: color .2s;
     }
     a:hover {
         color: red;
     }
-
-    i {
-        font-size: 30px;
-        color: $whiteColor;
+    .active {
+        color: red;
+        border-bottom: 2px solid red;
     }
+    .fas {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
 
+.redm {
+    font-size: 20px;
+    color: red;
 }
 
 .header {
@@ -77,6 +80,7 @@ body {
         color: red;
         font-size: 20px;
         margin-bottom: 10px;
+        font-weight: bold;
     }
 }
 
