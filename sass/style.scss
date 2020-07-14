@@ -16,9 +16,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+//NAVIGACJA
+
 .navbar {
     text-transform: uppercase;
     font-weight: bold;
+    transition: .3s;
     a, i {
         color: white;
         transition: color .3s;
@@ -41,6 +44,8 @@ body {
     font-size: 20px;
     color: red;
 }
+
+// HOME
 
 .header {
     color: $whiteColor;
@@ -98,6 +103,9 @@ body {
     background-color: rgba(0,0,0, 0.8);
 }
 
+// O MNIE
+
+
 .jumbotron {
     display: flex;
     flex-direction: column;
@@ -118,6 +126,8 @@ body {
         width: 100%;
     }
 }
+
+// PORTFOLIO
     
 .portfolio {
     background-image: url(../images/laptop_1920.jpg);
@@ -233,6 +243,9 @@ span.black {
     font-size: 20px;
 }
 
+
+// UMIEJĘTNOŚCI
+
 .skills{
     width: 100%;
     padding: 32px 16px;
@@ -266,6 +279,10 @@ span.black {
         width: 80%;
     }
 }
+
+
+// KONTAKT
+
 
 .contact {
     background-image: url(../images/imac_1920.jpg);
@@ -322,9 +339,6 @@ span.black {
 .form {
     width: 90%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: white;
     margin: 20px auto;
     background-color: rgba(80,80,80, 0.6);
@@ -336,37 +350,16 @@ span.black {
         font-size: 25px;
         padding: 0 20px;
     }
-    &__button {
-        margin: 20px 0;
-        font-size: 15px;
-        padding: 5px 10px;
-        text-transform: uppercase;
-        border-radius: 7px;
-    }
 }
-.socials {
-    flex-grow: 1;
-    height: 50%;
-    width: 50%;
+
+.form-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    &__a{
-        font-size: 50px;
-        margin: 0 20px;
-        color: white;
-        text-shadow: 0 0 10px black;
-        transition: .3s;
-        padding: 10px 15px;
-    }
-    &__a:hover {
-        color: red;
-    }
-    
+    width: 90%;
+    margin: 0 auto;
 }
+
 label, input, textarea {
     width: 90%;
     border-radius: 8px;
@@ -390,6 +383,53 @@ input,textarea:focus{
     background-color: rgba(0, 0, 0, .6);
 }
 
+.error-text {
+    width: 90%;
+    margin: 5px 0 0 0;
+    color: red;
+    visibility: hidden;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content:flex-end;
+    width: 90%;
+       .clear, .send {
+           margin: 20px 0;
+       }
+       .clear {
+           margin-right: 20px;
+       }
+   }
+
+.form-box.error .error-text {
+    visibility: visible;
+    width: 90%;
+}
+
+.socials {
+    flex-grow: 1;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    &__a{
+        font-size: 50px;
+        margin: 0 20px;
+        color: white;
+        text-shadow: 0 0 10px black;
+        transition: .3s;
+        padding: 10px 15px;
+    }
+    &__a:hover {
+        color: red;
+    }
+}
 
 @media screen and (min-width: 1024px){
     .img {
