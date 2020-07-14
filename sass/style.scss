@@ -243,6 +243,12 @@ span.black {
     font-size: 20px;
 }
 
+span.purple {
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 // UMIEJĘTNOŚCI
 
@@ -388,6 +394,16 @@ input,textarea:focus{
     margin: 5px 0 0 0;
     color: red;
     visibility: hidden;
+}
+
+.success {
+    visibility: hidden;
+}
+
+.success2 {
+    color: green;
+    visibility: visible;
+    font-weight: bold;
 }
 
 
