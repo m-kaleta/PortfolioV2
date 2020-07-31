@@ -90,6 +90,7 @@ sendBtn.addEventListener("click", (e) => {
 clearBtn.addEventListener("click", (e) => {
     clearLabels()
     clearSucces()
+    clearError()
 })
 
 // NAV

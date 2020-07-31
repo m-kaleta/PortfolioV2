@@ -274,11 +274,18 @@ span.purple {
     flex-wrap: wrap;
     margin: 0 auto;
 }
-.skills__icons .fab {
+
+.skills__icons {
+    padding: 10px;
+}
+
+.skills__icons .fab, .fas {
     text-shadow: 0 0 5px black;
     font-size: 50px;
     margin: 10px;
 }
+
+
 
 @media screen and (min-width: 375px) {
     .icons {
